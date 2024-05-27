@@ -6,7 +6,7 @@ o Programmed a bimodal, gshare, and hybrid branch predictor to simulate the effe
 o The program would track mispredictions, comparing the predictions made by the branch history table against the actual taken path.
 o A report was compiled comparing different models, size constraints, and misprediction penalties. 
 
-Code Descriptions
+File Descriptions
 
 Sim_bp.h - header file that includes the BHT variables and various model function definitions.
 
