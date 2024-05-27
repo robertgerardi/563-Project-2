@@ -1,13 +1,13 @@
-1. Type "make" to build.  (Type "make clean" first if you already compiled and want to recompile from scratch.)
+North Carolina State University - ECE 563 - Microprocessor Architecture
 
-2. Run trace reader:
+High Level Overview
 
-   To run without throttling output:
-   ./sim bimodal 6 gcc_trace.txt
-   ./sim gshare 9 3 gcc_trace.txt
-   ./sim hybrid 8 14 10 5 gcc_trace.txt
+o Programmed a bimodal, gshare, and hybrid branch predictor to simulate the effects of different branch prediction models on multiple traces.
+o The program would track mispredictions, comparing the predictions made by the branch history table against the actual taken path.
+o A report was compiled comparing different models, size constraints, and misprediction penalties. 
 
-   To run with throttling (via "less"):
-   ./sim bimodal 6 gcc_trace.txt | less
-   ./sim gshare 9 3 gcc_trace.txt | less
-   ./sim hybrid 8 14 10 5 gcc_trace.txt | less
+Code Descriptions
+
+Sim_bp.h - header file that includes the BHT variables and various model function definitions.
+
+Bht.cc - cpp file that contains the bimodal, gshare, and hybrid model function implementations. This file also contains various stats for recording.
